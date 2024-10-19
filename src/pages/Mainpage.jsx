@@ -1,12 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Mainpage from './Mainpage'; // Your main page component
+import Admin from './Admin'; // Your admin page component
 
-const Mainpage = () => {
+const App = () => {
     return (
-        <div>
-            <h1>Main Page</h1>
-            <p>Welcome to the main page of the app!</p>
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Mainpage />} />
+                <Route path="/admin" element={<Admin />} />
+            </Routes>
+        </Router>
     );
 };
 
-export default Mainpage;
+export default App;
