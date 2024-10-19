@@ -1,8 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Mainpage from './pages/Mainpage'; // Import Mainpage
-import Admin from './pages/Admin';       // Import Admin
-
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import Mainpage from './pages/Mainpage';
+import Admin from './pages/Admin';
 
 function App() {
   return (
@@ -12,9 +11,7 @@ function App() {
           <h1>Welcome to My React App</h1>
         </header>
         <Routes>
-          {/* Route for Mainpage */}
           <Route path="/" element={<Mainpage />} />
-          {/* Route for Admin */}
           <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
