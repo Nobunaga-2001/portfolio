@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Mainpage from './pages/Mainpage'; // Import Mainpage
 import Admin from './pages/Admin';       // Import Admin
-import './App.css';
+
 
 function App() {
   return (
